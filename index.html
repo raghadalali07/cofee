@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Shop</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                ☕ Brew & Bean
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-small">WELCOME TO BREW & BEAN</p>
+                <h1>
+                    Freshly Brewed.<br>
+                    Made With Passion.
+                </h1>
+                <p class="hero-text">
+                    Discover handcrafted coffee, delicious treats,
+                    and a cozy place to enjoy every moment.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-coffee">
+                        Explore Menu
+                    </a>
+                    <a href="#contact" class="btn btn-outline-light">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="introduction py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <p class="section-label">OUR STORY</p>
+                    <h2>
+                        More Than Just
+                        <span>Coffee</span>
+                    </h2>
+                    <p class="text-muted">
+                        At Brew & Bean, we believe that great coffee
+                        brings people together. We carefully select
+                        quality beans and prepare every drink with
+                        passion and attention to detail.
+                    </p>
+                    <p class="text-muted">
+                        Whether you're starting your morning, meeting
+                        friends, or simply taking a break, our cozy
+                        coffee shop is the perfect place to slow down
+                        and enjoy the moment.
+                    </p>
+                    <a href="#about" class="btn btn-coffee">
+                        Discover Our Story
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="intro-box">
+                        <div class="coffee-icon">☕</div>
+                        <h3>Crafted With Care</h3>
+                        <p>
+                            Every cup is prepared using carefully
+                            selected ingredients and freshly brewed
+                            coffee.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="section-label">OUR MENU</p>
+                <h2>
+                    Something For Every
+                    <span>Taste</span>
+                </h2>
+                <p class="text-muted">
+                    Explore our selection of freshly prepared drinks
+                    and delicious treats.
+                </p>
+            </div>
+            <!-- SEARCH -->
+            <div class="search-box mx-auto mb-4">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        🔍
+                    </span>
+                    <input type="text" id="searchInput" class="form-control"
+                        placeholder="Search for coffee, dessert...">
+                </div>
+            </div>
+            <!-- CATEGORY BUTTONS -->
+            <div class="category-buttons text-center mb-5">
+                <button class="btn category-btn active" data-category="all">
+                    All
+                </button>
+                <button class="btn category-btn" data-category="coffee">
+                    Coffee
+                </button>
+                <button class="btn category-btn" data-category="cold">
+                    Cold Drinks
+                </button>
+                <button class="btn category-btn" data-category="dessert">
+                    Desserts
+                </button>
+                <button class="btn category-btn" data-category="snack">
+                    Snacks
+                </button>
+            </div>
+            <!-- PRODUCTS -->
+            <div class="row g-4" id="productContainer">
+                <!-- JavaScript will create the products here -->
+            </div>
+            <!-- NO RESULTS -->
+            <div id="noResults" class="text-center mt-5 d-none">
+                <h4>☕ No products found</h4>
+                <p class="text-muted">
+                    Try searching for something else.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="about-card">
+                        <span>☕</span>
+                        <h3>
+                            The Perfect Place
+                            To Relax
+                        </h3>
+                        <p>
+                            Good coffee, good conversations, and
+                            good moments. That's what Brew & Bean
+                            is all about.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="section-label">ABOUT US</p>
+                    <h2>
+                        Coffee Made With
+                        <span>Passion</span>
+                    </h2>
+                    <p class="text-muted">
+                        We started Brew & Bean with one simple idea:
+                        create a welcoming space where people can
+                        enjoy excellent coffee and feel at home.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h4>☕ 100%</h4>
+                            <p class="text-muted">
+                                Quality Coffee
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <h4>❤️ Fresh</h4>
+                            <p class="text-muted">
+                                Ingredients
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDER NOW SECTION -->
+    <section id="order" class="order-section py-5">
+        <div class="container py-4">
+
+            <div class="text-center mb-5">
+                <p class="section-subtitle">ORDER WITH US</p>
+                <h2 class="section-title">Order Your Favorite Coffee</h2>
+                <p class="text-muted">
+                    Choose your favorite drink and let us prepare something special for you.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <div class="order-card">
+
+                        <form id="orderForm">
+
+                            <div class="row g-4">
+
+                                <!-- Name -->
+                                <div class="col-md-6">
+                                    <label for="orderName" class="form-label">
+                                        Your Name
+                                    </label>
+
+                                    <input type="text" id="orderName" class="form-control"
+                                        placeholder="Enter your name">
+
+                                    <small id="orderNameError" class="error-message"></small>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="col-md-6">
+                                    <label for="orderPhone" class="form-label">
+                                        Phone Number
+                                    </label>
+
+                                    <input type="tel" id="orderPhone" class="form-control"
+                                        placeholder="Enter your phone number">
+
+                                    <small id="orderPhoneError" class="error-message"></small>
+                                </div>
+
+                                <!-- Product -->
+                                <div class="col-md-6">
+                                    <label for="orderProduct" class="form-label">
+                                        Choose Your Coffee
+                                    </label>
+
+                                    <select id="orderProduct" class="form-select">
+                                        <option value="">Select a product</option>
+                                        <option value="Espresso">Espresso - $3.00</option>
+                                        <option value="Americano">Americano - $3.50</option>
+                                        <option value="Cappuccino">Cappuccino - $4.50</option>
+                                        <option value="Café Latte">Café Latte - $4.75</option>
+                                        <option value="Mocha">Mocha - $5.00</option>
+                                        <option value="Iced Latte">Iced Latte - $5.00</option>
+                                        <option value="Iced Mocha">Iced Mocha - $5.50</option>
+                                        <option value="Cold Brew">Cold Brew - $4.75</option>
+                                        <option value="Chocolate Cake">Chocolate Cake - $5.00</option>
+                                        <option value="Cheesecake">Cheesecake - $5.50</option>
+                                        <option value="Tiramisu">Tiramisu - $6.00</option>
+                                        <option value="Croissant">Croissant - $3.50</option>
+                                    </select>
+
+                                    <small id="orderProductError" class="error-message"></small>
+                                </div>
+
+                                <!-- Quantity -->
+                                <div class="col-md-6">
+                                    <label for="orderQuantity" class="form-label">
+                                        Quantity
+                                    </label>
+
+                                    <input type="number" id="orderQuantity" class="form-control" value="1" min="1"
+                                        max="20">
+                                </div>
+                                <!-- Order Type -->
+                                <div class="col-12">
+                                    <label class="form-label d-block">
+                                        Order Type
+                                    </label>
+                                    <div class="order-options">
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="orderType" id="pickup"
+                                                value="Pickup" checked>
+                                            <label class="form-check-label" for="pickup">
+                                                ☕ Pickup
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="orderType" id="dinein"
+                                                value="Dine In">
+                                            <label class="form-check-label" for="dinein">
+                                                🍰 Dine In
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Instructions -->
+                                <div class="col-12">
+                                    <label for="orderMessage" class="form-label">
+                                        Special Instructions
+                                    </label>
+                                    <textarea id="orderMessage" class="form-control" rows="4"
+                                        placeholder="Any special requests?"></textarea>
+                                </div>
+                                <!-- Button -->
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn coffee-btn order-btn">
+                                        Place Order ☕
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Success Message -->
+                        <div id="orderSuccess" class="order-success">
+                            ☕ Your order has been placed successfully!
+                            <br>
+                            <small>Thank you for choosing Brew & Bean.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="section-label">CONTACT US</p>
+                <h2>
+                    We'd Love To
+                    <span>Hear From You</span>
+                </h2>
+                <p class="text-muted">
+                    Have a question? Send us a message.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm" class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">
+                                    Name
+                                </label>
+                                <input type="text" id="name" class="form-control" placeholder="Your name">
+                                <small class="error" id="nameError"></small>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+                                <input type="email" id="email" class="form-control" placeholder="Your email">
+                                <small class="error" id="emailError"></small>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">
+                                    Message
+                                </label>
+                                <textarea id="message" class="form-control" rows="5"
+                                    placeholder="Write your message..."></textarea>
+                                <small class="error" id="messageError"></small>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-coffee px-5">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="successMessage" class="alert alert-success mt-4 d-none">
+                        ☕ Thank you! Your message has been sent
+                        successfully.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h3>☕ Brew & Bean</h3>
+                    <p>
+                        Fresh coffee. Good moments.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Quick Links</h5>
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">
+                    © 2026 Brew & Bean. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
